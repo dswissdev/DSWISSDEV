@@ -1,4 +1,3 @@
-```html name=index.js
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,5 +53,3 @@
   <div class="subtitle">The site is under construction...</div>
 </body>
 </html>
-```
-**Now everything is in English.**
