@@ -93,19 +93,7 @@ export default function HyperliquidTrade() {
       {/* Main Trading Interface */}
       <div className="flex h-[calc(100vh-130px)]">
         {/* Reduced Left Sidebar - Chart Tools */}
-        <div className="w-10 bg-emerald-950/30 border-r border-emerald-700/30 flex flex-col items-center py-3 gap-3">
-          <StarIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
-          <TrendingUpIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
-          <BarChart3Icon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
-          <ZapIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
-          <ActivityIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
-          <div className="w-4 h-4 border border-gray-400 cursor-pointer hover:border-white"></div>
-          <div className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white text-xs font-bold flex items-center justify-center">
-            T
-          </div>
-          <RefreshCwIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
-          <MoreHorizontalIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
-        </div>
+        
 
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col">
@@ -228,18 +216,7 @@ export default function HyperliquidTrade() {
 
             <div className="w-80 border-l border-emerald-700/30 bg-emerald-950/30 flex flex-col">
               {/* Top Bar with Address */}
-              <div className="border-b border-emerald-700/30 px-4 py-2">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1 text-white cursor-pointer bg-emerald-950/50 border border-emerald-700/50 rounded px-3 py-1.5 hover:bg-emerald-900/50 transition-colors">
-                    <span className="text-sm">0xC7E6...b077</span>
-                    <ChevronDownIcon className="w-4 h-4" />
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <GlobeIcon className="w-4 h-4 text-white cursor-pointer" />
-                    <SettingsIcon className="w-4 h-4 text-white cursor-pointer" />
-                  </div>
-                </div>
-              </div>
+              
 
               {/* Market Trading Form */}
               <div className="p-4 flex-1">
