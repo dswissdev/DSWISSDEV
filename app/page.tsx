@@ -66,105 +66,110 @@ export default function HyperliquidTrade() {
         </div>
       </header>
 
+      {/* Compact Trading Pair Header */}
+      <div className="border-b border-emerald-700/30 bg-emerald-950/20 px-6 py-2">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-8">
+            <div className="flex items-center gap-3">
+              <div className="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                ₿
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="text-white font-semibold">BTC/USDC</span>
+                <ChevronDownIcon className="w-4 h-4 text-gray-400" />
+              </div>
+              <span className="text-emerald-400 text-xs bg-emerald-950/50 px-2 py-1 rounded">Spot</span>
+            </div>
+
+            <div className="flex items-center gap-6 text-xs">
+              <div>
+                <div className="text-gray-400">BTC</div>
+                <div className="text-white font-mono">112,959</div>
+              </div>
+              <div>
+                <div className="text-gray-400">Price</div>
+                <div className="text-white font-mono">112,959</div>
+              </div>
+              <div>
+                <div className="text-gray-400">24h Change</div>
+                <div className="text-red-400 font-mono">-1,994 / -1.73%</div>
+              </div>
+              <div>
+                <div className="text-gray-400">24h Volume</div>
+                <div className="text-white font-mono">1,528,835,697.85 USDC</div>
+              </div>
+              <div>
+                <div className="text-gray-400">Market Cap</div>
+                <div className="text-white font-mono">--</div>
+              </div>
+              <div>
+                <div className="text-gray-400">Contract</div>
+                <div className="text-white font-mono text-xs">0x8f25...7c67</div>
+              </div>
+            </div>
+          </div>
+          <Button className="bg-emerald-400 hover:bg-emerald-300 text-emerald-900 font-semibold text-sm px-6 mt-2">
+            Deposit
+          </Button>
+        </div>
+      </div>
+
       {/* Main Trading Interface */}
-      <div className="flex h-[calc(100vh-73px)]">
-        {/* Left Sidebar - Chart Tools */}
-        <div className="w-12 bg-emerald-950/30 border-r border-emerald-700/30 flex flex-col items-center py-4 gap-4">
-          <StarIcon className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
-          <TrendingUpIcon className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
-          <BarChart3Icon className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
-          <ZapIcon className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
-          <ActivityIcon className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
-          <div className="w-5 h-5 border border-gray-400 cursor-pointer hover:border-white"></div>
-          <div className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white text-xs font-bold">T</div>
-          <RefreshCwIcon className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
-          <MoreHorizontalIcon className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
+      <div className="flex h-[calc(100vh-130px)]">
+        {/* Reduced Left Sidebar - Chart Tools */}
+        <div className="w-10 bg-emerald-950/30 border-r border-emerald-700/30 flex flex-col items-center py-3 gap-3">
+          <StarIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
+          <TrendingUpIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
+          <BarChart3Icon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
+          <ZapIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
+          <ActivityIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
+          <div className="w-4 h-4 border border-gray-400 cursor-pointer hover:border-white"></div>
+          <div className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white text-xs font-bold flex items-center justify-center">
+            T
+          </div>
+          <RefreshCwIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
+          <MoreHorizontalIcon className="w-4 h-4 text-gray-400 cursor-pointer hover:text-white" />
         </div>
 
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col">
-          {/* Trading Pair Header */}
-          <div className="border-b border-emerald-700/30 bg-emerald-950/20 px-6 py-4">
+          {/* Compact Chart Controls */}
+          <div className="border-b border-emerald-700/30 bg-emerald-950/20 px-4 py-2">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 text-sm">
+                  <span className="text-white">5m</span>
+                  <span className="text-gray-400">1h</span>
+                  <span className="text-gray-400">D</span>
+                  <ChevronDownIcon className="w-4 h-4 text-gray-400" />
+                </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                    ₿
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <span className="text-white font-semibold text-lg">BTC/USDC</span>
-                    <ChevronDownIcon className="w-4 h-4 text-gray-400" />
-                  </div>
-                  <span className="text-emerald-400 text-sm bg-emerald-950/50 px-2 py-1 rounded">Spot</span>
+                  <BarChart3Icon className="w-4 h-4 text-gray-400" />
+                  <span className="text-gray-400 text-sm">Indicators</span>
                 </div>
-
-                <div className="flex items-center gap-8 text-sm">
-                  <div>
-                    <span className="text-gray-400">BTC</span>
-                    <div className="text-white font-mono">112,959</div>
-                  </div>
-                  <div>
-                    <span className="text-gray-400">Price</span>
-                    <div className="text-white font-mono">112,959</div>
-                  </div>
-                  <div>
-                    <span className="text-gray-400">24h Change</span>
-                    <div className="text-red-400 font-mono">-1,994 / -1.73%</div>
-                  </div>
-                  <div>
-                    <span className="text-gray-400">24h Volume</span>
-                    <div className="text-white font-mono">1,528,835,697.85 USDC</div>
-                  </div>
-                  <div>
-                    <span className="text-gray-400">Market Cap</span>
-                  </div>
-                  <div>
-                    <span className="text-gray-400">Contract</span>
-                    <div className="text-white font-mono text-xs">0x8f25...7c67</div>
-                  </div>
-                </div>
+              </div>
+              <div className="flex items-center gap-4 text-sm">
+                <span className="text-gray-400">21:56:39 (UTC)</span>
+                <span className="text-gray-400">%</span>
+                <span className="text-gray-400">log</span>
+                <span className="text-gray-400">auto</span>
               </div>
             </div>
           </div>
 
-          {/* Chart and Trading Interface */}
           <div className="flex flex-1">
             {/* Chart Area */}
             <div className="flex-1 flex flex-col">
-              {/* Chart Controls */}
-              <div className="border-b border-emerald-700/30 bg-emerald-950/20 px-4 py-2">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-2">
-                      <span className="text-white text-sm">5m</span>
-                      <span className="text-gray-400 text-sm">1h</span>
-                      <span className="text-gray-400 text-sm">D</span>
-                      <ChevronDownIcon className="w-4 h-4 text-gray-400" />
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <BarChart3Icon className="w-4 h-4 text-gray-400" />
-                      <span className="text-gray-400 text-sm">Indicators</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4 text-sm">
-                    <span className="text-gray-400">21:56:39 (UTC)</span>
-                    <span className="text-gray-400">%</span>
-                    <span className="text-gray-400">log</span>
-                    <span className="text-gray-400">auto</span>
-                  </div>
-                </div>
-              </div>
-
               <div className="flex-1 bg-emerald-950/10 flex items-center justify-center">
                 <div className="text-gray-500 text-lg">TradingView Chart Area</div>
               </div>
 
-              {/* Chart Footer */}
+              {/* Compact Chart Footer */}
               <div className="border-t border-emerald-700/30 bg-emerald-950/20 px-4 py-2">
-                <div className="flex items-center justify-between text-sm">
+                <div className="flex items-center justify-between text-xs">
                   <div className="flex items-center gap-4">
                     <span className="text-gray-400">BTC/USDC-142 : 1D : Hyperliquid</span>
-                    <div className="flex items-center gap-4 text-xs">
+                    <div className="flex items-center gap-3">
                       <span className="text-emerald-400">O93,733</span>
                       <span className="text-white">H94,099</span>
                       <span className="text-white">L91,700</span>
@@ -174,7 +179,7 @@ export default function HyperliquidTrade() {
                   </div>
                   <div className="flex items-center gap-4">
                     <span className="text-gray-400">Volume 268.77</span>
-                    <div className="flex items-center gap-2 text-xs">
+                    <div className="flex items-center gap-2">
                       <span className="text-gray-400">5y</span>
                       <span className="text-gray-400">1y</span>
                       <span className="text-gray-400">6m</span>
@@ -197,18 +202,18 @@ export default function HyperliquidTrade() {
               {/* Order Book / Trades Tabs */}
               <div className="border-b border-emerald-700/30">
                 <div className="flex">
-                  <button className="flex-1 px-4 py-3 text-sm text-emerald-400 border-b-2 border-emerald-400 bg-emerald-950/30">
+                  <button className="flex-1 px-4 py-2 text-sm text-emerald-400 border-b-2 border-emerald-400 bg-emerald-950/30">
                     Order Book
                   </button>
-                  <button className="flex-1 px-4 py-3 text-sm text-gray-400 hover:text-white">Trades</button>
-                  <button className="px-3 py-3">
+                  <button className="flex-1 px-4 py-2 text-sm text-gray-400 hover:text-white">Trades</button>
+                  <button className="px-3 py-2">
                     <MoreHorizontalIcon className="w-4 h-4 text-gray-400" />
                   </button>
                 </div>
               </div>
 
               {/* Order Book */}
-              <div className="h-64 overflow-hidden">
+              <div className="h-48 overflow-hidden">
                 <div className="px-4 py-2 border-b border-emerald-700/30">
                   <div className="grid grid-cols-3 gap-2 text-xs text-gray-400">
                     <div>Price</div>
@@ -225,13 +230,8 @@ export default function HyperliquidTrade() {
                     { price: "112,978", size: "3,000", total: "85,745" },
                     { price: "112,977", size: "4,001", total: "82,745" },
                     { price: "112,971", size: "7,011", total: "78,745" },
-                    { price: "112,970", size: "11", total: "71,734" },
-                    { price: "112,965", size: "4,000", total: "71,722" },
-                    { price: "112,964", size: "2,999", total: "67,722" },
-                    { price: "112,963", size: "44,706", total: "64,723" },
-                    { price: "112,962", size: "15,010", total: "20,017" },
                   ].map((order, i) => (
-                    <div key={i} className="grid grid-cols-3 gap-2 px-4 py-1 text-xs hover:bg-emerald-950/50">
+                    <div key={i} className="grid grid-cols-3 gap-2 px-4 py-0.5 text-xs hover:bg-emerald-950/50">
                       <div className="text-red-400 font-mono">{order.price}</div>
                       <div className="text-white text-right font-mono">{order.size}</div>
                       <div className="text-white text-right font-mono">{order.total}</div>
@@ -240,7 +240,7 @@ export default function HyperliquidTrade() {
                 </div>
 
                 {/* Current Price */}
-                <div className="px-4 py-2 bg-red-500/20 border-y border-red-500/30">
+                <div className="px-4 py-1 bg-red-500/20 border-y border-red-500/30">
                   <div className="text-red-400 font-mono text-sm font-bold">112,956</div>
                 </div>
 
@@ -252,13 +252,8 @@ export default function HyperliquidTrade() {
                     { price: "112,949", size: "4,000", total: "9,358" },
                     { price: "112,948", size: "10,185", total: "19,543" },
                     { price: "112,944", size: "736", total: "20,279" },
-                    { price: "112,943", size: "4,124", total: "24,403" },
-                    { price: "112,942", size: "3,000", total: "27,402" },
-                    { price: "112,940", size: "2,546", total: "29,948" },
-                    { price: "112,939", size: "6,086", total: "36,034" },
-                    { price: "112,936", size: "6,999", total: "43,033" },
                   ].map((order, i) => (
-                    <div key={i} className="grid grid-cols-3 gap-2 px-4 py-1 text-xs hover:bg-emerald-950/50">
+                    <div key={i} className="grid grid-cols-3 gap-2 px-4 py-0.5 text-xs hover:bg-emerald-950/50">
                       <div className="text-emerald-400 font-mono">{order.price}</div>
                       <div className="text-white text-right font-mono">{order.size}</div>
                       <div className="text-white text-right font-mono">{order.total}</div>
@@ -266,7 +261,7 @@ export default function HyperliquidTrade() {
                   ))}
                 </div>
 
-                <div className="px-4 py-2 text-center">
+                <div className="px-4 py-1 text-center">
                   <div className="text-xs text-gray-400">Spread: 5 | 0.004%</div>
                 </div>
               </div>
@@ -274,35 +269,38 @@ export default function HyperliquidTrade() {
               {/* Trading Form */}
               <div className="border-t border-emerald-700/30 p-4">
                 {/* Market/Limit/Pro Tabs */}
-                <div className="flex mb-4">
-                  <button className="flex-1 px-3 py-2 text-sm text-white bg-emerald-600 rounded-l">Market</button>
-                  <button className="flex-1 px-3 py-2 text-sm text-gray-400 bg-emerald-950/50 border-l border-emerald-700/30">
+                <div className="flex mb-3">
+                  <button className="flex-1 px-3 py-1.5 text-sm text-white bg-emerald-600 rounded-l">Market</button>
+                  <button className="flex-1 px-3 py-1.5 text-sm text-gray-400 bg-emerald-950/50 border-l border-emerald-700/30">
                     Limit
                   </button>
-                  <button className="flex-1 px-3 py-2 text-sm text-gray-400 bg-emerald-950/50 border-l border-emerald-700/30 rounded-r flex items-center justify-center gap-1">
+                  <button className="flex-1 px-3 py-1.5 text-sm text-gray-400 bg-emerald-950/50 border-l border-emerald-700/30 rounded-r flex items-center justify-center gap-1">
                     Pro <ChevronDownIcon className="w-3 h-3" />
                   </button>
                 </div>
 
                 {/* Buy/Sell Buttons */}
-                <div className="grid grid-cols-2 gap-2 mb-4">
-                  <Button className="bg-emerald-500 hover:bg-emerald-600 text-white">Buy</Button>
-                  <Button variant="outline" className="border-red-500 text-red-400 hover:bg-red-500/10 bg-transparent">
+                <div className="grid grid-cols-2 gap-2 mb-3">
+                  <Button className="bg-emerald-500 hover:bg-emerald-600 text-white py-2">Buy</Button>
+                  <Button
+                    variant="outline"
+                    className="border-red-500 text-red-400 hover:bg-red-500/10 bg-transparent py-2"
+                  >
                     Sell
                   </Button>
                 </div>
 
                 {/* Available to Trade */}
-                <div className="mb-4">
-                  <div className="flex justify-between text-sm mb-2">
+                <div className="mb-3">
+                  <div className="flex justify-between text-sm mb-1">
                     <span className="text-gray-400">Available to Trade</span>
                     <span className="text-white">0.00 USDC</span>
                   </div>
                 </div>
 
                 {/* Size Input */}
-                <div className="mb-4">
-                  <div className="flex justify-between text-sm mb-2">
+                <div className="mb-3">
+                  <div className="flex justify-between text-sm mb-1">
                     <span className="text-gray-400">Size</span>
                     <div className="flex items-center gap-1">
                       <span className="text-white">USDC</span>
@@ -313,11 +311,11 @@ export default function HyperliquidTrade() {
                     <Input
                       type="text"
                       placeholder="0"
-                      className="bg-emerald-950/50 border-emerald-700/50 text-white pr-8"
+                      className="bg-emerald-950/50 border-emerald-700/50 text-white pr-8 h-8"
                     />
                     <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">%</span>
                   </div>
-                  <div className="flex gap-1 mt-2">
+                  <div className="flex gap-1 mt-1">
                     <button className="w-6 h-6 bg-emerald-950/50 border border-emerald-700/50 rounded text-xs text-gray-400 hover:text-white">
                       25
                     </button>
@@ -334,12 +332,12 @@ export default function HyperliquidTrade() {
                 </div>
 
                 {/* Enable Trading Button */}
-                <Button className="w-full bg-emerald-400 hover:bg-emerald-300 text-emerald-900 font-semibold">
+                <Button className="w-full bg-emerald-400 hover:bg-emerald-300 text-emerald-900 font-semibold mb-3">
                   Enable Trading
                 </Button>
 
                 {/* Trading Stats */}
-                <div className="mt-4 space-y-2 text-xs">
+                <div className="space-y-1 text-xs">
                   <div className="flex justify-between">
                     <span className="text-gray-400">Order Value</span>
                     <span className="text-white">N/A</span>
@@ -359,13 +357,10 @@ export default function HyperliquidTrade() {
         </div>
 
         {/* Right Panel - Account Info */}
-        <div className="w-72 border-l border-emerald-700/30 bg-emerald-950/30 p-4">
+        <div className="w-64 border-l border-emerald-700/30 bg-emerald-950/30 p-4">
           {/* Account Actions */}
-          <div className="mb-6">
-            <Button className="w-full bg-emerald-400 hover:bg-emerald-300 text-emerald-900 font-semibold mb-3">
-              Deposit
-            </Button>
-            <div className="grid grid-cols-2 gap-2">
+          <div className="mb-4">
+            <div className="grid grid-cols-2 gap-2 mb-3">
               <Button
                 variant="outline"
                 className="border-emerald-600 text-emerald-300 hover:bg-emerald-800 bg-transparent text-xs"
@@ -374,7 +369,7 @@ export default function HyperliquidTrade() {
               </Button>
               <Button
                 variant="outline"
-                className="border-emerald-600 text-emerald-300 hover:bg-emerald-800 bg-transparent"
+                className="border-emerald-600 text-emerald-300 hover:bg-emerald-800 bg-transparent text-xs"
               >
                 Withdraw
               </Button>
@@ -382,10 +377,10 @@ export default function HyperliquidTrade() {
           </div>
 
           {/* Account Equity */}
-          <div className="space-y-3">
-            <h3 className="text-white font-semibold">Account Equity</h3>
+          <div className="space-y-2">
+            <h3 className="text-white font-semibold text-sm">Account Equity</h3>
 
-            <div className="space-y-2 text-sm">
+            <div className="space-y-1 text-xs">
               <div className="flex justify-between">
                 <span className="text-gray-400">Spot</span>
                 <span className="text-white">$0.00</span>
@@ -395,10 +390,10 @@ export default function HyperliquidTrade() {
                 <span className="text-white">$0.00</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-400 underline">Perps Overview</span>
+                <span className="text-gray-400 underline cursor-pointer">Perps Overview</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-400 underline">Balance</span>
+                <span className="text-gray-400 underline cursor-pointer">Balance</span>
                 <span className="text-white">$0.00</span>
               </div>
               <div className="flex justify-between">
@@ -406,7 +401,7 @@ export default function HyperliquidTrade() {
                 <span className="text-white">$0.00</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-400 underline">Cross Margin Ratio</span>
+                <span className="text-gray-400 underline cursor-pointer">Cross Margin Ratio</span>
                 <span className="text-white">0.00%</span>
               </div>
               <div className="flex justify-between">
@@ -422,49 +417,50 @@ export default function HyperliquidTrade() {
         </div>
       </div>
 
-      <div className="border-t border-emerald-700/30 bg-emerald-950/20 px-6 py-4">
+      {/* Compact Bottom Section with Tabs */}
+      <div className="border-t border-emerald-700/30 bg-emerald-950/20 px-6 py-3">
         <Tabs defaultValue="balances" className="w-full">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-3">
             <TabsList className="bg-transparent border-b border-gray-700 rounded-none h-auto p-0">
               <TabsTrigger
                 value="balances"
-                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-white data-[state=active]:text-emerald-400"
+                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-white data-[state=active]:text-emerald-400 px-4 py-2"
               >
                 Balances
               </TabsTrigger>
               <TabsTrigger
                 value="positions"
-                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400"
+                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400 px-4 py-2"
               >
                 Positions
               </TabsTrigger>
               <TabsTrigger
                 value="orders"
-                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400"
+                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400 px-4 py-2"
               >
                 Open Orders
               </TabsTrigger>
               <TabsTrigger
                 value="twap"
-                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400"
+                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400 px-4 py-2"
               >
                 TWAP
               </TabsTrigger>
               <TabsTrigger
                 value="trade-history"
-                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400"
+                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400 px-4 py-2"
               >
                 Trade History
               </TabsTrigger>
               <TabsTrigger
                 value="funding"
-                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400"
+                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400 px-4 py-2"
               >
                 Funding History
               </TabsTrigger>
               <TabsTrigger
                 value="order-history"
-                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400"
+                className="bg-transparent border-b-2 border-transparent data-[state=active]:border-emerald-400 data-[state=active]:bg-transparent rounded-none text-gray-400 data-[state=active]:text-emerald-400 px-4 py-2"
               >
                 Order History
               </TabsTrigger>
@@ -486,7 +482,7 @@ export default function HyperliquidTrade() {
           <TabsContent value="balances" className="mt-0">
             <div className="bg-emerald-950/20 rounded-lg">
               {/* Table Header */}
-              <div className="grid grid-cols-7 gap-4 px-6 py-4 border-b border-gray-700 text-sm text-gray-400">
+              <div className="grid grid-cols-8 gap-4 px-6 py-3 border-b border-gray-700 text-sm text-gray-400">
                 <div>Coin</div>
                 <div>Total Balance</div>
                 <div>Available Balance</div>
@@ -500,7 +496,7 @@ export default function HyperliquidTrade() {
               </div>
 
               {/* Empty State */}
-              <div className="px-6 py-8 text-center">
+              <div className="px-6 py-6 text-center">
                 <p className="text-gray-400">No balances yet</p>
               </div>
             </div>
