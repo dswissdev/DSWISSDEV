@@ -90,36 +90,7 @@ export default function HyperliquidTrade() {
                 <div className="text-gray-500 text-lg">TradingView Chart Area</div>
               </div>
 
-              <div className="border-t border-emerald-700/30 bg-emerald-950/20 px-4 py-2">
-                <div className="flex items-center justify-between text-xs">
-                  <div className="flex items-center gap-4">
-                    <span className="text-gray-400">BTC/USDC-142 : 1D : Hyperliquid</span>
-                    <div className="flex items-center gap-3">
-                      <span className="text-emerald-400">O93,733</span>
-                      <span className="text-white">H94,099</span>
-                      <span className="text-white">L91,700</span>
-                      <span className="text-white">C94,048</span>
-                      <span className="text-emerald-400">315.00 (+0.34%)</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <span className="text-gray-400">Volume 268.77</span>
-                    <div className="flex items-center gap-2">
-                      <span className="text-gray-400">5y</span>
-                      <span className="text-gray-400">1y</span>
-                      <span className="text-gray-400">6m</span>
-                      <span className="text-gray-400">3m</span>
-                      <span className="text-gray-400">1m</span>
-                      <span className="text-gray-400">5d</span>
-                      <span className="text-gray-400">1d</span>
-                    </div>
-                    <span className="text-gray-400">21:56:18 (UTC)</span>
-                    <span className="text-gray-400">%</span>
-                    <span className="text-gray-400">log</span>
-                    <span className="text-gray-400">auto</span>
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
             <div className="w-80 border-l border-emerald-700/30 bg-emerald-950/20">
