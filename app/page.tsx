@@ -109,29 +109,6 @@ export default function HyperliquidTrade() {
 
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col">
-          <div className="border-b border-emerald-700/30 bg-emerald-950/20 px-4 py-2">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2 text-sm">
-                  <span className="text-white">5m</span>
-                  <span className="text-gray-400">1h</span>
-                  <span className="text-gray-400">D</span>
-                  <ChevronDownIcon className="w-4 h-4 text-gray-400" />
-                </div>
-                <div className="flex items-center gap-2">
-                  <BarChart3Icon className="w-4 h-4 text-gray-400" />
-                  <span className="text-gray-400 text-sm">Indicators</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 text-sm">
-                <span className="text-gray-400">21:56:39 (UTC)</span>
-                <span className="text-gray-400">%</span>
-                <span className="text-gray-400">log</span>
-                <span className="text-gray-400">auto</span>
-              </div>
-            </div>
-          </div>
-
           <div className="flex flex-1">
             <div className="flex-1 flex flex-col">
               <div className="flex-1 bg-emerald-950/10 flex items-center justify-center">
