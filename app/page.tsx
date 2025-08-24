@@ -194,8 +194,8 @@ export default function HyperliquidTrade() {
               </div>
             </div>
 
-            <div className="w-80 border-l border-emerald-700/30 bg-emerald-950/20">
-              {/* Order Book / Trades Tabs */}
+            {/* Order Book / Trades Tabs */}
+            <div className="w-72 border-l border-emerald-700/30 bg-emerald-950/20">
               <div className="border-b border-emerald-700/30">
                 <div className="flex">
                   <button className="flex-1 px-4 py-2 text-sm text-emerald-400 border-b-2 border-emerald-400 bg-emerald-950/30">
@@ -273,7 +273,8 @@ export default function HyperliquidTrade() {
               </div>
             </div>
 
-            <div className="w-80 border-l border-emerald-700/30 bg-emerald-950/30 flex flex-col">
+            {/* Market Trading Form */}
+            <div className="w-64 border-l border-emerald-700/30 bg-emerald-950/30 flex flex-col">
               {/* Top Bar with Address */}
               <div className="border-b border-emerald-700/30 px-4 py-2">
                 <div className="flex items-center justify-between">
@@ -378,7 +379,7 @@ export default function HyperliquidTrade() {
                 </div>
 
                 {/* Account Actions */}
-                <div className="space-y-2 mb-6">
+                <div className="space-y-2">
                   <Button className="w-full bg-emerald-400 hover:bg-emerald-300 text-emerald-900 font-semibold">
                     Deposit
                   </Button>
@@ -397,43 +398,45 @@ export default function HyperliquidTrade() {
                     </Button>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                {/* Account Equity */}
-                <div className="space-y-3">
-                  <h3 className="text-white font-semibold text-sm">Account Equity</h3>
+            {/* Account Equity */}
+            <div className="w-72 border-l border-emerald-700/30 bg-emerald-950/40 flex flex-col">
+              <div className="p-4">
+                <h3 className="text-white font-semibold text-sm mb-4">Account Equity</h3>
 
-                  <div className="space-y-2 text-xs">
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Spot</span>
-                      <span className="text-white">$0.00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Perps</span>
-                      <span className="text-white">$0.00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400 underline cursor-pointer">Perps Overview</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Balance</span>
-                      <span className="text-white">$0.00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Unrealized PNL</span>
-                      <span className="text-white">$0.00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400 underline cursor-pointer">Cross Margin Ratio</span>
-                      <span className="text-white">0.00%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Maintenance Margin</span>
-                      <span className="text-white">$0.00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Cross Account Leverage</span>
-                      <span className="text-white">0.00x</span>
-                    </div>
+                <div className="space-y-2 text-xs">
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Spot</span>
+                    <span className="text-white">$0.00</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Perps</span>
+                    <span className="text-white">$0.00</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400 underline cursor-pointer">Perps Overview</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Balance</span>
+                    <span className="text-white">$0.00</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Unrealized PNL</span>
+                    <span className="text-white">$0.00</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400 underline cursor-pointer">Cross Margin Ratio</span>
+                    <span className="text-white">0.00%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Maintenance Margin</span>
+                    <span className="text-white">$0.00</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Cross Account Leverage</span>
+                    <span className="text-white">0.00x</span>
                   </div>
                 </div>
               </div>
@@ -506,7 +509,6 @@ export default function HyperliquidTrade() {
 
           <TabsContent value="balances" className="mt-0">
             <div className="bg-emerald-950/20 rounded-lg">
-              {/* Table Header */}
               <div className="grid grid-cols-8 gap-4 px-6 py-3 border-b border-gray-700 text-sm text-gray-400">
                 <div>Coin</div>
                 <div>Total Balance</div>
@@ -519,57 +521,54 @@ export default function HyperliquidTrade() {
                 <div>Transfer</div>
                 <div>Contract</div>
               </div>
-
-              {/* Empty State */}
               <div className="px-6 py-6 text-center">
                 <p className="text-gray-400">No balances yet</p>
               </div>
             </div>
           </TabsContent>
-          {/* Additional Tabs Content */}
+
           <TabsContent value="positions" className="mt-0">
             <div className="bg-emerald-950/20 rounded-lg">
-              {/* Positions Content */}
               <div className="px-6 py-6 text-center">
                 <p className="text-gray-400">No positions yet</p>
               </div>
             </div>
           </TabsContent>
+
           <TabsContent value="orders" className="mt-0">
             <div className="bg-emerald-950/20 rounded-lg">
-              {/* Open Orders Content */}
               <div className="px-6 py-6 text-center">
                 <p className="text-gray-400">No open orders yet</p>
               </div>
             </div>
           </TabsContent>
+
           <TabsContent value="twap" className="mt-0">
             <div className="bg-emerald-950/20 rounded-lg">
-              {/* TWAP Content */}
               <div className="px-6 py-6 text-center">
                 <p className="text-gray-400">No TWAP data yet</p>
               </div>
             </div>
           </TabsContent>
+
           <TabsContent value="trade-history" className="mt-0">
             <div className="bg-emerald-950/20 rounded-lg">
-              {/* Trade History Content */}
               <div className="px-6 py-6 text-center">
                 <p className="text-gray-400">No trade history yet</p>
               </div>
             </div>
           </TabsContent>
+
           <TabsContent value="funding" className="mt-0">
             <div className="bg-emerald-950/20 rounded-lg">
-              {/* Funding History Content */}
               <div className="px-6 py-6 text-center">
                 <p className="text-gray-400">No funding history yet</p>
               </div>
             </div>
           </TabsContent>
+
           <TabsContent value="order-history" className="mt-0">
             <div className="bg-emerald-950/20 rounded-lg">
-              {/* Order History Content */}
               <div className="px-6 py-6 text-center">
                 <p className="text-gray-400">No order history yet</p>
               </div>
