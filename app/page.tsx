@@ -63,19 +63,19 @@ export default function HyperliquidTrade() {
             <div className="flex items-center gap-6 text-xs">
               <div>
                 <div className="text-gray-400">BTC</div>
-                <div className="text-white font-mono">112,959</div>
+                <div className="text-white font-mono">113,459</div>
               </div>
               <div>
                 <div className="text-gray-400">Price</div>
-                <div className="text-white font-mono">112,959</div>
+                <div className="text-white font-mono">113,459</div>
               </div>
               <div>
                 <div className="text-gray-400">24h Change</div>
-                <div className="text-red-400 font-mono">-1,994 / -1.73%</div>
+                <div className="text-red-400 font-mono">-1,706 / -1.48%</div>
               </div>
               <div>
                 <div className="text-gray-400">24h Volume</div>
-                <div className="text-white font-mono">1,528,835,697.85 USDC</div>
+                <div className="text-white font-mono">1,532,296,919.77 USDC</div>
               </div>
               <div>
                 <div className="text-gray-400">Market Cap</div>
@@ -87,9 +87,6 @@ export default function HyperliquidTrade() {
               </div>
             </div>
           </div>
-          <Button className="bg-emerald-400 hover:bg-emerald-300 text-emerald-900 font-semibold text-sm px-6 mt-2">
-            Deposit
-          </Button>
         </div>
       </div>
 
