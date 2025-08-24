@@ -5,7 +5,6 @@ import {
   ChevronDownIcon,
   SettingsIcon,
   GlobeIcon,
-  SquareIcon,
   FilterIcon,
   RefreshCwIcon,
   StarIcon,
@@ -36,11 +35,10 @@ export default function HyperliquidTrade() {
             </nav>
           </div>
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1 text-white cursor-pointer">
+            <div className="flex items-center gap-1 text-white cursor-pointer bg-emerald-950/50 border border-emerald-700/50 rounded px-3 py-1.5 hover:bg-emerald-900/50 transition-colors">
               <span className="text-sm">0xC7E6...b077</span>
               <ChevronDownIcon className="w-4 h-4" />
             </div>
-            <SquareIcon className="w-5 h-5 text-white cursor-pointer" />
             <GlobeIcon className="w-5 h-5 text-white cursor-pointer" />
             <SettingsIcon className="w-5 h-5 text-white cursor-pointer" />
           </div>
@@ -258,12 +256,11 @@ export default function HyperliquidTrade() {
               {/* Top Bar with Address */}
               <div className="border-b border-emerald-700/30 px-4 py-2">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1 text-white cursor-pointer">
+                  <div className="flex items-center gap-1 text-white cursor-pointer bg-emerald-950/50 border border-emerald-700/50 rounded px-3 py-1.5 hover:bg-emerald-900/50 transition-colors">
                     <span className="text-sm">0xC7E6...b077</span>
                     <ChevronDownIcon className="w-4 h-4" />
                   </div>
                   <div className="flex items-center gap-2">
-                    <SquareIcon className="w-4 h-4 text-white cursor-pointer" />
                     <GlobeIcon className="w-4 h-4 text-white cursor-pointer" />
                     <SettingsIcon className="w-4 h-4 text-white cursor-pointer" />
                   </div>
