@@ -1,7 +1,20 @@
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
-import { ChevronDownIcon, SettingsIcon, GlobeIcon, SquareIcon, FilterIcon, RefreshCwIcon, StarIcon, TrendingUpIcon, BarChart3Icon, ZapIcon, ActivityIcon, MoreHorizontalIcon } from 'lucide-react'
+import {
+  ChevronDownIcon,
+  SettingsIcon,
+  GlobeIcon,
+  SquareIcon,
+  FilterIcon,
+  RefreshCwIcon,
+  StarIcon,
+  TrendingUpIcon,
+  BarChart3Icon,
+  ZapIcon,
+  ActivityIcon,
+  MoreHorizontalIcon,
+} from "lucide-react"
 
 export default function HyperliquidTrade() {
   return (
@@ -402,7 +415,7 @@ export default function HyperliquidTrade() {
                       <span className="text-gray-400 underline cursor-pointer">Perps Overview</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-400 underline cursor-pointer">Balance</span>
+                      <span className="text-gray-400">Balance</span>
                       <span className="text-white">$0.00</span>
                     </div>
                     <div className="flex justify-between">
@@ -427,6 +440,7 @@ export default function HyperliquidTrade() {
             </div>
           </div>
         </div>
+      </div>
 
       {/* Compact Bottom Section with Tabs */}
       <div className="border-t border-emerald-700/30 bg-emerald-950/20 px-6 py-3">
