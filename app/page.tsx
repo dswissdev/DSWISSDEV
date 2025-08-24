@@ -1,19 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
-import {
-  ChevronDownIcon,
-  SettingsIcon,
-  GlobeIcon,
-  FilterIcon,
-  RefreshCwIcon,
-  StarIcon,
-  TrendingUpIcon,
-  BarChart3Icon,
-  ZapIcon,
-  ActivityIcon,
-  MoreHorizontalIcon,
-} from "lucide-react"
+import { ChevronDownIcon, SettingsIcon, GlobeIcon, FilterIcon, MoreHorizontalIcon } from "lucide-react"
 
 export default function HyperliquidTrade() {
   return (
@@ -93,13 +81,12 @@ export default function HyperliquidTrade() {
       {/* Main Trading Interface */}
       <div className="flex h-[calc(100vh-130px)]">
         {/* Reduced Left Sidebar - Chart Tools */}
-        
 
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col">
           <div className="flex flex-1">
             <div className="flex-1 flex flex-col">
-              <div className="flex-1 bg-emerald-950/10 flex items-center justify-center">
+              <div className="h-96 bg-emerald-950/10 flex items-center justify-center">
                 <div className="text-gray-500 text-lg">TradingView Chart Area</div>
               </div>
 
@@ -216,7 +203,6 @@ export default function HyperliquidTrade() {
 
             <div className="w-80 border-l border-emerald-700/30 bg-emerald-950/30 flex flex-col">
               {/* Top Bar with Address */}
-              
 
               {/* Market Trading Form */}
               <div className="p-4 flex-1">
