@@ -239,9 +239,7 @@ export default function HyperliquidTrade() {
               </div>
 
               {/* Enable Trading Button */}
-              <Button className="w-full bg-emerald-400 hover:bg-emerald-300 text-emerald-900 font-semibold mb-4">
-                Enable Trading
-              </Button>
+              
 
               {/* Trading Stats */}
               <div className="space-y-2 text-xs mb-6">
@@ -261,22 +259,10 @@ export default function HyperliquidTrade() {
 
               {/* Account Actions */}
               <div className="space-y-2">
-                <Button className="w-full bg-emerald-400 hover:bg-emerald-300 text-emerald-900 font-semibold">
-                  Deposit
-                </Button>
+                
                 <div className="grid grid-cols-2 gap-2">
-                  <Button
-                    variant="outline"
-                    className="border-emerald-600 text-emerald-300 hover:bg-emerald-800 bg-transparent text-xs"
-                  >
-                    Perps 🔄 Spot
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-emerald-600 text-emerald-300 hover:bg-emerald-800 bg-transparent text-xs"
-                  >
-                    Withdraw
-                  </Button>
+                  
+                  
                 </div>
               </div>
             </div>
